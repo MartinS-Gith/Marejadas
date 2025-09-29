@@ -22,6 +22,64 @@ public class DatoOceano extends Datos{
     public void mostrar() {
         System.out.println("fecha: " + anio + "mes:" + mes + "dia:" + dia + "hora:" + hora + "hmo:" + hm0 + "tz:" + tz + "te:" + te);
     }
+
+    public double getHm0() {
+        return hm0;
+    }
+
+    public void setHm0(double hm0) {
+        this.hm0 = hm0;
+    }
+
+    public double getTz() {
+        return tz;
+    }
+
+    public void setTz(double tz) {
+        this.tz = tz;
+    }
+
+    public double getTe() {
+        return te;
+    }
+
+    public void setTe(double te) {
+        this.te = te;
+    }
+
+    public double getAnio() {
+        return anio;
+    }
+
+    public void setAnio(double anio) {
+        this.anio = anio;
+    }
+
+    public double getDia() {
+        return dia;
+    }
+
+    public void setDia(double dia) {
+        this.dia = dia;
+    }
+
+    public double getHora() {
+        return hora;
+    }
+
+    public void setHora(double hora) {
+        this.hora = hora;
+    }
+
+    public double getMes() {
+        return mes;
+    }
+
+    public void setMes(double mes) {
+        this.mes = mes;
+    }
+    
+    
      
 }
 

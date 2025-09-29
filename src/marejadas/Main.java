@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package marejadas;
 
 import java.io.File;
@@ -35,6 +31,13 @@ public class Main {
             //4.- unificar el archivo temporal con los objetos que tenemos creados.
             List<Datos> datosRemotos = lector.leer(tempFile.getAbsolutePath());
             //5.- Mostrar resultados
+            for(Datos d : datosRemotos){
+                d.mostrar();
+            //6.- Ola más alta
+            AnalizadorMarejadas analizador = new AnalizadorMarejadas(datos);
+            analizador.olaMasAlta();
+            break;
+            }
         }
         catch(Exception e){
             e.printStackTrace();
